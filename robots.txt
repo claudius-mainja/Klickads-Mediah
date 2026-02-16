@@ -1,0 +1,46 @@
+# robots.txt for KlickAds Digital Marketing
+# https://www.klickads.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://klickads.com/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
+
+# Disallow sensitive directories (if any)
+# Disallow: /private/
+# Disallow: /admin/
+
+# AI Search Engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: BingBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Main brand
+Brand: KlickAds
+Brand: Blacklemur Innovations
+
+# Geographic targeting
+Target-Location: Johannesburg, Gauteng, South Africa
+Target-Location: Harare, Zimbabwe
+Target-Location: Cape Town, Western Cape, South Africa
