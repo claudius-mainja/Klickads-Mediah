@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work - KlickAds Digital Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            purple: '#4a0e78',
+                            darkPurple: '#2d0545',
+                            pink: '#dd1887',
+                            light: '#f8eef8'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Cormorant Garamond', 'serif'],
+                        body: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../Logo-03.png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="font-body overflow-x-hidden min-h-screen">
+    <!-- Gradient Background -->
+    <div class="fixed inset-0 bg-gradient-to-br from-brand-darkPurple via-brand-purple to-brand-darkPurple -z-10"></div>
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-purple-700/40 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[700px] h-[700px] bg-purple-900/50 rounded-full blur-3xl"></div>
+    </div>
+    <div class="fixed inset-0 -z-10 opacity-10 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="glass-nav rounded-2xl px-4 lg:px-6 py-2 flex items-center justify-between">
+                <a href="../index.html" class="flex items-center gap-2 group">
+                    <img src="../Logo-03.png" alt="KlickAds" class="w-16 h-16 object-contain transform group-hover:scale-110 transition-transform">
+                </a>
+                
+                <div class="hidden lg:flex items-center gap-6 xl:gap-8">
+                    <a href="../index.html" class="nav-link text-white hover:text-brand-pink transition-colors font-medium">Home</a>
+                    <a href="services.html" class="nav-link text-white hover:text-brand-pink transition-colors font-medium">Services</a>
+                    <a href="portfolio.html" class="nav-link text-brand-pink font-semibold transition-colors">Our Work</a>
+                    <a href="about.html" class="nav-link text-white hover:text-brand-pink transition-colors font-medium">About Us</a>
+                    <a href="contact.html" class="px-5 lg:px-6 py-2.5 bg-gradient-to-r from-brand-pink to-brand-purple text-white rounded-full hover:shadow-lg hover:shadow-brand-pink/50 transition-all transform hover:-translate-y-0.5 font-medium">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <button class="lg:hidden text-white text-2xl p-2" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="fixed inset-0 z-40 hidden" id="mobile-menu">
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" id="mobile-overlay"></div>
+        <div class="absolute right-0 top-0 h-full w-72 bg-gradient-to-br from-brand-purple to-brand-pink shadow-2xl transform translate-x-full transition-transform duration-300" id="mobile-panel">
+            <div class="p-6">
+                <button class="absolute top-6 right-6 text-white text-2xl" id="close-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="mt-12 flex flex-col gap-6">
+                    <a href="../index.html" class="text-lg text-white hover:text-brand-pink">Home</a>
+                    <a href="services.html" class="text-lg text-white hover:text-brand-pink">Services</a>
+                    <a href="portfolio.html" class="text-lg text-brand-pink font-semibold">Our Work</a>
+                    <a href="about.html" class="text-lg text-white hover:text-brand-pink">About Us</a>
+                    <a href="contact.html" class="px-6 py-3 bg-gradient-to-r from-brand-pink to-brand-purple text-white rounded-full text-center font-medium">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="pt-28 lg:pt-32 pb-12 lg:pb-16 relative overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-20 right-1/4 w-40 h-40 bg-brand-pink/20 rounded-full blur-3xl float-animation"></div>
+            <div class="absolute top-40 left-1/3 w-28 h-28 bg-purple-500/20 rounded-full blur-3xl float-animation delay-200"></div>
+            <div class="absolute bottom-10 right-10 w-36 h-36 bg-purple-600/15 rounded-full blur-2xl float-animation delay-300"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="text-center fade-in">
+                <div class="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-4">
+                    <i class="fas fa-palette text-brand-pink"></i>
+                    <span class="text-sm text-white">Our Creative Work</span>
+                </div>
+                <h1 class="font-heading text-4xl lg:text-5xl xl:text-7xl font-bold mt-2 mb-4 lg:mb-6 text-white">
+                    Explore Our <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink to-purple-400">Creative</span> Portfolio
+                </h1>
+                <p class="text-lg lg:text-xl text-white/70 max-w-3xl mx-auto mb-8">Take a look at our latest projects and see how we've helped brands transform their digital presence.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="contact.html" class="px-6 lg:px-8 py-3 bg-gradient-to-r from-brand-pink to-purple-600 text-white rounded-full font-medium hover:shadow-xl hover:shadow-brand-pink/50 transition-all transform hover:-translate-y-1 flex items-center gap-2">
+                        <i class="fas fa-rocket"></i> Start Your Project
+                    </a>
+                    <a href="services.html" class="px-6 lg:px-8 py-3 glass-card text-white rounded-full font-medium hover:bg-white/10 transition-all flex items-center gap-2">
+                        <i class="fas fa-list"></i> Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="pb-8 lg:pb-10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="flex flex-wrap justify-center gap-3 lg:gap-4 fade-in" id="portfolio-filters">
+                <button class="filter-btn active px-5 lg:px-6 py-2 lg:py-2.5 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple text-white" data-filter="all">All Projects</button>
+                <button class="filter-btn px-5 lg:px-6 py-2 lg:py-2.5 rounded-full glass-card text-white hover:bg-white/10" data-filter="websites">Websites</button>
+                <button class="filter-btn px-5 lg:px-6 py-2 lg:py-2.5 rounded-full glass-card text-white hover:bg-white/10" data-filter="branding">Branding</button>
+                <button class="filter-btn px-5 lg:px-6 py-2 lg:py-2.5 rounded-full glass-card text-white hover:bg-white/10" data-filter="social">Social Media</button>
+                <button class="filter-btn px-5 lg:px-6 py-2 lg:py-2.5 rounded-full glass-card text-white hover:bg-white/10" data-filter="ads">Paid Ads</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-8 lg:10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8" id="portfolio-grid">
+                <div class="portfolio-item fade-in" data-category="websites">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">Website Design</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">TechStart SA</h4>
+                            <p class="text-white/70 text-sm">Modern website with online booking system.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in delay-100" data-category="branding">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">Brand Identity</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">Bloom Beauty</h4>
+                            <p class="text-white/70 text-sm">Complete brand identity design.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in delay-200" data-category="social">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">Social Media</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">FitLife Gym</h4>
+                            <p class="text-white/70 text-sm">Social media strategy with 300% growth.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in" data-category="ads">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">Google Ads</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">AutoFix SA</h4>
+                            <p class="text-white/70 text-sm">Google Ads with 500+ leads per month.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in delay-100" data-category="websites">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd8575f8a5?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">E-Commerce</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">Fashion Forward</h4>
+                            <p class="text-white/70 text-sm">Online store with 150% sales increase.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item fade-in delay-200" data-category="branding">
+                    <div class="glass-card rounded-2xl overflow-hidden group cursor-pointer">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1493723843684-a4367fe4f77e?w=400&h=300&fit=crop" alt="Project" class="w-full object-cover h-48 lg:h-64 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <a href="#" class="w-12 lg:w-14 h-12 lg:h-14 rounded-full bg-gradient-to-r from-brand-pink to-brand-purple flex items-center justify-center transform scale-0 group-hover:scale-100 transition-transform delay-100">
+                                    <i class="fas fa-external-link-alt text-white"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-5 lg:p-6">
+                            <div class="text-sm text-brand-pink mb-2">Logo Design</div>
+                            <h4 class="font-heading text-lg lg:text-xl font-bold mb-2 text-white">Urban Coffee Co.</h4>
+                            <p class="text-white/70 text-sm">Memorable brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 lg:py-20 bg-gradient-to-r from-brand-purple/50 to-brand-pink/30">
+        <div class="max-w-7xl mx-auto px-4 lg:px-6">
+            <div class="text-center mb-12 lg:mb-16 fade-in">
+                <span class="text-brand-pink font-medium">Client Love</span>
+                <h2 class="font-heading text-3xl lg:text-4xl xl:text-5xl font-bold mt-2 text-white">What Our Clients Say</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+                <div class="glass-card rounded-2xl p-6 lg:p-8 fade-in">
+                    <div class="flex items-center gap-1 text-brand-pink mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-white/80 mb-6 italic text-sm lg:text-base">"KlickAds transformed our online presence! Our website traffic increased by 150%."</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop" alt="Client" class="w-10 lg:w-12 h-10 lg:h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-bold text-white text-sm lg:text-base">Michael T.</div>
+                            <div class="text-xs lg:text-sm text-white/60">AutoFix SA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-6 lg:p-8 fade-in delay-100">
+                    <div class="flex items-center gap-1 text-brand-pink mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-white/80 mb-6 italic text-sm lg:text-base">"Our social media grew from 500 to 10,000 in just 6 months!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop" alt="Client" class="w-10 lg:w-12 h-10 lg:h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-bold text-white text-sm lg:text-base">Sarah M.</div>
+                            <div class="text-xs lg:text-sm text-white/60">Bloom Beauty</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-2xl p-6 lg:p-8 fade-in delay-200">
+                    <div class="flex items-center gap-1 text-brand-pink mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-white/80 mb-6 italic text-sm lg:text-base">"The new website increased our bookings by 80%!"</p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop" alt="Client" class="w-10 lg:w-12 h-10 lg:h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-bold text-white text-sm lg:text-base">David K.</div>
+                            <div class="text-xs lg:text-sm text-white/60">FitLife Gym</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 lg:py-20">
+        <div class="max-w-4xl mx-auto px-4 lg:px-6">
+            <div class="glass-card rounded-3xl p-8 lg:p-12 text-center relative overflow-hidden fade-in">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-pink/20 to-brand-purple/20"></div>
+                <div class="relative z-10">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-white">Ready to Create Something Amazing?</h2>
+                    <p class="text-lg text-white/70 mb-6 lg:mb-8">Let's discuss your project and see how we can help bring your vision to life.</p>
+                    <a href="contact.html" class="inline-block px-6 lg:px-8 py-3 lg:py-4 bg-gradient-to-r from-brand-pink to-brand-purple text-white rounded-full text-base lg:text-lg font-medium hover:shadow-xl hover:shadow-brand-pink/50 transition-all transform hover:-translate-y-1">
+                        Start Your Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative text-white overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-darkPurple to-purple-900"></div>
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-pink/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/30 rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 lg:px-6 py-12 lg:py-16 relative z-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-8 mb-10 lg:mb-12">
+                <div class="sm:col-span-2 lg:col-span-2">
+                    <a href="../index.html" class="mb-4 lg:mb-6 inline-block">
+                        <img src="../Logo-03.png" alt="KlickAds" class="w-16 h-16 object-contain transform hover:scale-110 transition-transform">
+                    </a>
+                    <p class="text-white/80 mb-5 lg:mb-6 text-sm lg:text-base">Johannesburg's most creative digital agency.</p>
+                    <div class="flex gap-3 lg:gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-r from-brand-pink to-purple-600 flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+                            <i class="fab fa-facebook-f text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-r from-brand-pink to-purple-600 flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+                            <i class="fab fa-instagram text-sm"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-gradient-to-r from-brand-pink to-purple-600 flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4 lg:mb-6">Explore</h4>
+                    <ul class="space-y-2 lg:space-y-3">
+                        <li><a href="../index.html" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-brand-pink"></i> Home</a></li>
+                        <li><a href="services.html" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-brand-pink"></i> Services</a></li>
+                        <li><a href="portfolio.html" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-brand-pink"></i> Our Work</a></li>
+                        <li><a href="about.html" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-brand-pink"></i> About</a></li>
+                        <li><a href="contact.html" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-chevron-right text-xs text-brand-pink"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4 lg:mb-6">Services</h4>
+                    <ul class="space-y-2 lg:space-y-3">
+                        <li><a href="#" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-star text-xs text-brand-pink"></i> Paid Ads</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-star text-xs text-brand-pink"></i> Social Media</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-star text-xs text-brand-pink"></i> Web Design</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-star text-xs text-brand-pink"></i> SEO</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-brand-pink transition-colors text-sm flex items-center gap-2"><i class="fas fa-star text-xs text-brand-pink"></i> Graphic Design</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4 lg:mb-6">Get In Touch</h4>
+                    <ul class="space-y-3 lg:space-y-4">
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-brand-pink to-purple-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-xs"></i>
+                            </div>
+                            <span class="text-white/70 text-sm">info@klickads.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-brand-pink to-purple-600 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-xs"></i>
+                            </div>
+                            <span class="text-white/70 text-sm">+27 76 126 5694</span>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/27761265694" class="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-xl hover:bg-green-600 transition-colors text-sm hover:scale-105 transition-transform">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-6 lg:pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-sm text-white/50">&copy; 2026 KlickAds. All rights reserved.</p>
+                    <div class="flex items-center gap-2 text-white/50 text-sm">
+                        <span>Made with</span>
+                        <i class="fas fa-heart text-brand-pink"></i>
+                        <span>in Johannesburg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
